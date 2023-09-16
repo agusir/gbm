@@ -374,7 +374,7 @@
       preloader: false,
       fixedContentPos: false
     
-    }).magnificPopup('open');
+    });
   }
 
   if ($(".img-popup").length) {
