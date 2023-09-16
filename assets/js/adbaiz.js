@@ -352,6 +352,18 @@
       });
     });
   }
+  if ($(".image-popup-vertical-fit").length) {
+    $('.image-popup-vertical-fit').magnificPopup({
+      type: 'image',
+      mainClass: 'mfp-with-zoom', 
+      gallery:{
+          enabled:true
+        },
+    
+    
+    
+    });
+  }
 
   if ($(".video-popup").length) {
     $(".video-popup").magnificPopup({
@@ -362,7 +374,7 @@
       preloader: false,
       fixedContentPos: false
     
-    });
+    }).magnificPopup('open');
   }
 
   if ($(".img-popup").length) {
